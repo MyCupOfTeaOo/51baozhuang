@@ -74,6 +74,227 @@ body {
 .navbar-collapse{
     border-top: 1px solid #999;
 }
+
+/*main*/
+main .step{
+    width: 20px;
+    background-color: #CCC;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #FFF;
+}
+main .step-f{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 4px solid #CCC;
+    position: relative;
+    top: -12px;
+    z-index: -1;
+    color: #CCC;
+}
+main .st{
+    margin-top: 30px;
+}
+main .st:hover{
+    cursor: pointer;
+}
+.st1 .step{
+    background-color: #FF7F00;
+}
+.st1 .step-f{
+    color: #FF7F00;
+    border-color: #FF7F00;
+}
+main .st:hover .step{
+    background-color: #FF7F00;
+}
+main .st:hover .step-f{
+    color: #FF7F00;
+    border-color: #FF7F00;
+}
+.th1{
+    color: #333;
+    border-left: 3px solid #1277DC;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.th2{
+    background-color: #F4F4F4;
+    border-radius: 5px 5px 0 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.th3{
+    background-color: #F4F4F4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.icon1{
+    width: 21px;
+    height: 17px;
+    float: left;
+    background-repeat: no-repeat;
+    background-image: url("CssGaga.png");
+    background-size: 71px;
+    position: relative;
+    bottom: -2px;
+    margin-right: 6px;
+}
+.icon2{
+    width: 24px;
+    height: 22px;
+    float: left;
+    background-repeat: no-repeat;
+    background-image: url("CssGaga.png");
+    background-size: 71px;
+    background-position: -26px 0;
+    position: relative;
+    margin-right: 6px;
+}
+.icon3{
+    width: 17px;
+    height: 22px;
+    float: left;
+    background-repeat: no-repeat;
+    background-image: url("CssGaga.png");
+    background-size: 71px;
+    background-position: -49px 0;
+    margin-right: 6px;
+}
+.th-span1{
+    color: #1277DC;
+}
+.td1{
+    background-color: #FBFCFF;
+    padding: 20px 10px 20px 20px;
+    position: relative;
+    border: 1px solid #E8E8E8;
+    border-top: none;
+}
+.span-radio{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #D6D6D6;
+    border-radius: 50%;
+    vertical-align: -8%;
+    margin: 0 8px;
+}
+.radio{
+    display: none;
+}
+label{
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+.radio:checked+span{
+    border: 5px solid #1277DC;
+}
+.btn:focus .menu-span{
+    color: #5EA1E7;
+}
+.menu-span{
+   display: inline-block;
+    background-color: #1277DC;
+    width: 20px;
+    line-height: 25px;
+    color: #FFF;
+    border-radius: 8%;
+}
+.dropdown-menu{
+    min-width: 116px;
+}
+.dropdown{
+    min-width: 116px;
+    width: 116px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0,-50%);
+}
+.caret{
+    border-width: 6px 6px 0 6px;
+}
+.text1{
+    display: inline-block;
+    width: 60px;
+}
+.td2-label{
+    padding-top: 6px;
+}
+.x-radio{
+    display: inline-block;
+    margin-right: 20px;
+}
+.text{
+    margin: 0 20px;
+    display: inline-block;
+}
+input[type="text"]{
+    border: #E8E8E8 solid 1px;
+}
+.field-2{
+    display: inline-block;
+}
+.td3{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.next{
+    padding: 100px 0 80px 0;
+    border: 1px solid #E8E8E8;
+    border-top: none;
+    margin-bottom: 40px;
+}
+.b-next{
+    display: block;
+    width: 150px;
+    background-color: #E34F4F;
+    color: #FFF;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.b-next:hover{
+    color: #1277DC;
+}
+.b-next:focus{
+    color: #1277DC;
+}
+/*footer*/
+.f1{
+    color: #999;
+    background-color: #F9F9F9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.f1-s1{
+    cursor: pointer;
+}
+.f1-s1:hover{
+    color: #1D7CDD;
+}
+.code{
+    float: right;
+}
+.ff>p{
+    float: right;
+}
+.f2{
+    text-align: center;
+    color: #FFF;
+    background-color: #1277DC;
+}
+.z10{
+    z-index: 10;
+}
+.z-1{
+    z-index: 1;
+}
 /*media*/
 @media (min-width: 768px) {
     .b5{
@@ -81,6 +302,23 @@ body {
     }
     .menu{
         display: none;
+    }
+    .td2-2{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 992px){
+    .code{
+        float: none;
+        margin-bottom: 10px;
+    }
+    .ff>p{
+        float: none;
+    }
+}
+@media (max-width: 991px){
+    .field-2{
+        display: block;
     }
 }
 @media (max-width: 767px) {
@@ -90,5 +328,15 @@ body {
     }
     .header2{
         padding: 10px 0;
+    }
+    .label-radio{
+        margin: 10px 0;
+    }
+    .text{
+        margin: 10px 0;
+        display: block;
+    }
+    .x-radio{
+        display: block;
     }
 }
